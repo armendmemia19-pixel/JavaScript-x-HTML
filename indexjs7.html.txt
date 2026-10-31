@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mini Calculator</title>
+</head>
+<body>
+
+<script>
+  // Ask for two numbers
+  let a = Number(prompt("Enter the first number:"));
+  let b = Number(prompt("Enter the second number:"));
+
+  // Calculate results
+  let sum = a + b;
+  let difference = a - b;
+  let product = a * b;
+  let division;
+
+  if (b === 0) {
+    division = "not possible";
+  } else {
+    division = a / b;
+  }
+
+  // Build the table
+  let html = "<table border='1'>";
+  html += "<tr><th>Operation</th><th>Result</th></tr>";
+
+  html += "<tr><td>" + a + " + " + b + "</td><td>" + sum + "</td></tr>";
+  html += "<tr><td>" + a + " - " + b + "</td><td>" + difference + "</td></tr>";
+  html += "<tr><td>" + a + " * " + b + "</td><td>" + product + "</td></tr>";
+  html += "<tr><td>" + a + " / " + b + "</td><td>" + division + "</td></tr>";
+
+  html += "</table>";
+
+  document.write(html);
+</script>
+
+</body>
+</html>

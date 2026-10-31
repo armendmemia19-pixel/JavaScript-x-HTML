@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercise</title>
+</head>
+<body>
+  
+<button onclick="sayHello()">Click me</button>
+<p id="message"></p>
+
+<script>
+  function sayHello() {
+    document.getElementById("message").textContent = "Hello JavaScript!";
+  }
+</script>
+
+<script>
+  // a) Create the array
+  const fruits = ['apple', 'banana', 'cherry'];
+
+  // b) Add elements
+  fruits.push('mango');   // add at the end
+  fruits.unshift('kiwi'); // add at the beginning
+
+  // Log array and length
+  console.log(fruits);
+  console.log("Length:", fruits.length);
+
+  // c) Loop through the array
+  for (const fruit of fruits) {
+    console.log(fruit);
+  }
+
+  // Log as one line
+  console.log(fruits.join(", "));
+</script>
+</body>
+</html>
